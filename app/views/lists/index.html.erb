@@ -1,0 +1,15 @@
+<div class="text-center">
+  <h1>My Movie Watchlist</h1>
+  <p><%= link_to "Create a new list", new_list_path %></p>
+</div>
+<hr>
+
+<div class="grid text-center">
+  <% @lists.each do |list| %>
+    <div class="g-col-4">
+    <%# <%= link_to list_path(list) %>
+      <h3>My Lists</h3>
+      <p> ✨<%= link_to list.name, list_path(list) %>✨</p>
+    </div>
+  <% end %>
+</div>

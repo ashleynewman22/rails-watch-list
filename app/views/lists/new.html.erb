@@ -1,0 +1,10 @@
+<h2>Create A New List</h2>
+<hr>
+<%= simple_form_for @list do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.button :submit %>
+  <hr>
+<% end %>
+
+<%# <%= link_to "Back to Movie Watchlist", list_path(@list) %>
